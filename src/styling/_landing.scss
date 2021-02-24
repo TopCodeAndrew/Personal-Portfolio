@@ -1,4 +1,24 @@
 .landing{
     position: relative;
-    background-color: gray;
+    // background-color: gray;
+    display: flex;
+    justify-content: center;
+    .main-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        right: 300px;
+        .big-letter-box{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            margin-left: 30px;
+            .red{
+                color: $red;
+            }
+        }
+    }
+    
 }

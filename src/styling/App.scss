@@ -2,6 +2,7 @@
 
 $primaryBackground: #24252E;
 $lightGray: #c2c4c7;
+$darkGray: #808181;
 $red: #D62737;
 $blue: #06eeff;
 $green: #73ff9d;
@@ -24,7 +25,10 @@ $green: #73ff9d;
   
   }
   .fakeCode{
-    color: $lightGray
+    font-size: 24px;
+    color: $darkGray;
+    word-spacing: -2px;
+    font-family: 'Pangolin', cursive;
   }
   
 
