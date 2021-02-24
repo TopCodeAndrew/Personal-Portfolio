@@ -1,19 +1,18 @@
 .contactBar{
+    z-index: 1;
     background-color: $lightGray;
     height: 400px;
-    width: 70px;
-    position: sticky;
-    top: 25vh;
-    left: -20px;
     width: 75px;
+    position: fixed;
+    top: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     border-radius: 0px 20px 20px 0px;
-    border-right: 2px solid $blue;
-    border-top: 2px solid $blue;
-    border-bottom: 2px solid $blue;
+    border-right: 4px solid $blue;
+    border-top: 4px solid $blue;
+    border-bottom: 4px solid $blue;
     box-shadow: 1px white;
 
     img{

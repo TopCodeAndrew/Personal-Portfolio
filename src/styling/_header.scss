@@ -5,6 +5,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: sticky;
+    top: 0;
     .item-box{
         // background-color: gray;
         width: 800px;
