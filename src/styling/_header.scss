@@ -1,2 +1,18 @@
 .header{
+    // background-color: $lightGray;
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .item-box{
+        // background-color: gray;
+        width: 800px;
+        margin-right:30px;
+        display: flex;
+        justify-content: space-between;
+        .header-item{
+            font-size: 20px;
+        }
+    }
 }
