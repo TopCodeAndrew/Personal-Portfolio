@@ -1,2 +1,28 @@
 .contactBar{
+    background-color: $lightGray;
+    height: 400px;
+    width: 70px;
+    position: sticky;
+    top: 25vh;
+    left: -20px;
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px 20px 20px 0px;
+    border-right: 2px solid $blue;
+    border-top: 2px solid $blue;
+    border-bottom: 2px solid $blue;
+    box-shadow: 1px white;
+
+    img{
+        height: 60px;
+        width: auto;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover{
+            height: 65px;
+        }
+    }
 }
