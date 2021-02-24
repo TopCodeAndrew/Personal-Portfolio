@@ -1,14 +1,20 @@
 import './styling/App.scss';
+import About from './Components/About';
+import ContactBar from './Components/ContactBar';
+import Header from './Components/Header';
+import Landing from './Components/Landing';
+import SkillsExperience from './Components/SkillsExperience';
+import Footer from './Components/Footer';
 
 function App() {
   return (
     <div className="App">
-      test
-      <h1>Hello.</h1>
-      <h1>I'm</h1>
-      <h1>Andrew</h1>
-      <h2>test</h2>
-      <h3>test</h3>
+      <Header />
+      <ContactBar />
+      <Landing />
+      <About />
+      <SkillsExperience />
+      <Footer />
     </div>
   );
 }

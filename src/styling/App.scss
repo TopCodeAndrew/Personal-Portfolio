@@ -1,12 +1,27 @@
 
 
 $primaryBackground: #24252E;
+$lightGray: #c2c4c7;
+$red: #D62737;
+$blue: #06eeff;
+$green: #73ff9d;
 
 .App {
+  min-height: 100vh;
   text-align: center;
   background-color: $primaryBackground;
+  color: white;
   h1{
-    color: white;
+    
+  }
+  h2{
+    
+  }
+  h3{
+    
+  }
+  p{
+  
   }
   
 
