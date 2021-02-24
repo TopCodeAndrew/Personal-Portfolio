@@ -7,15 +7,17 @@ export default function Landing() {
     let fakeEndH1 = '< /h1 >'
     return (
         <div className="landing">
-            <img className='profile-pic' src={profilePic} alt='profile-pic' />
-            <div className='main-box'>
-                <p className='fakeCode'> {fakeH1}</p>
-                <div className='big-letter-box'>
-                    <h1>Hello.</h1>
-                    <h1 className='red'>I'm</h1>
-                    <h1 className='red'>Andrew</h1>
+            <div className='master-container'>
+                <div className='main-box'>
+                    <p className='fakeCode'> {fakeH1}</p>
+                    <div className='big-letter-box'>
+                        <h1>Hello.</h1>
+                        <h1 className='red'>I'm</h1>
+                        <h1 className='red'>Andrew</h1>
+                    </div>
+                    <p className='fakeCode'> {fakeEndH1}</p>
                 </div>
-                <p className='fakeCode'> {fakeEndH1}</p>
+                <img className='profile-pic' src={profilePic} alt='profile-pic' />
             </div>
             <div className='pull-down'>
                 <p>Learn more about what I do</p>

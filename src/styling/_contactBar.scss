@@ -1,34 +1,45 @@
 .contactBar{
     z-index: 1;
-    background-color: $lightGray;
-    height: 350px;
-    width: 65px;
+    height: 100vh;
     position: fixed;
-    top: 30vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 0px 20px 20px 0px;
-    border-right: 1px solid $blue;
-    border-top: 1px solid $blue;
-    border-bottom: 1px solid $blue;
-    box-shadow: 1px white;
-
-    .img-box{
-        height: 70px;
+    justify-content: center;
+    align-items: flex-start;
+    .button-box{
+        z-index: 1;
+        background-color: $lightGray;
+        height: 350px;
+        width: 65px;
+        // position: fixed;
+        // top: 30vh;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        img{
-            height: 50px;
-            width: auto;
-            border-radius: 10px;
-            cursor: pointer;
-            &:hover{
-                height: 55px;
-            }
-        }
+        border-radius: 0px 20px 20px 0px;
+        border-right: 1px solid $blue;
+        border-top: 1px solid $blue;
+        border-bottom: 1px solid $blue;
+        box-shadow: 1px white;
 
+        .img-box{
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 50px;
+                width: auto;
+                border-radius: 10px;
+                cursor: pointer;
+                &:hover{
+                    height: 55px;
+                    box-shadow:  0px 0px 4px 3px $darkGray;
+                }
+            }
+
+        }
+            
     }
 }

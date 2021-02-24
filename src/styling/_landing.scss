@@ -1,37 +1,55 @@
 .landing{
-    // background-color: red;
+    background-color: $red;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    height: 95vh;
+    max-height: 700px;
 
-    .profile-pic{
-        height: 580px;
-        position: absolute;
-        right: 165px;
-        top: 100px;
-        border-radius: 10px;;
-    }
-    .main-box{
+
+    .master-container{
         // background-color: red;
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        position: relative;
-        right: 300px;
-        .big-letter-box{
+        justify-content: space-between;
+        align-items: center;
+
+        .main-box{
+            // background-color: red;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            margin-left: 12vw;
+            .big-letter-box{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 30px;
+                .red{
+                    color: $red;
+                }
+            }
+        }
+        .profile-pic{
+            height: 550px;
+            border-radius: 10px;;
+            margin-right: 12vw;
+        }
 
-            margin-left: 30px;
-            .red{
-                color: $red;
+        @media (max-width: 1500px){
+            .profile-pic{
+                margin-right: 8vw;
+            }
+        }
+        @media (max-width: 1200px){
+            .profile-pic{
+                height: 390px;
             }
         }
     }
+
 
     .pull-down{
         // background-color: gray;

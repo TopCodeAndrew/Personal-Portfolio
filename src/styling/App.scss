@@ -31,6 +31,16 @@ $green: #73ff9d;
     font-family: 'Pangolin', cursive;
   }
   
+  @media (max-width: 1400px){
+    h1{
+      font-size: 130px;
+    }
+  }
+  @media (max-width: 1050px){
+    h1{
+      font-size: 100px;
+    }
+  }
 
 }
 
