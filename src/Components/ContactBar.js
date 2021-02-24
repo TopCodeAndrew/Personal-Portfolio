@@ -7,10 +7,10 @@ import emailIcon from '../images/email-icon.png';
 export default function ContactBar() {
     return (
         <div className="contactBar">
-            <img src={linkedInIcon} />
-            <img src={emailIcon} />
-            <img src={githubIcon} />
-            <img src={spotifyIcon} />
+            <div className='img-box'><img src={linkedInIcon} /></div>
+            <div className='img-box'><img src={emailIcon} /></div>
+            <div className='img-box'><img src={githubIcon} /></div>
+            <div className='img-box'><img src={spotifyIcon} /></div>
         </div>
     );
 }

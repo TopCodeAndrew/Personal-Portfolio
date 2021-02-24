@@ -1,27 +1,34 @@
 .contactBar{
     z-index: 1;
     background-color: $lightGray;
-    height: 400px;
-    width: 75px;
+    height: 350px;
+    width: 65px;
     position: fixed;
-    top: 25vh;
+    top: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     border-radius: 0px 20px 20px 0px;
-    border-right: 4px solid $blue;
-    border-top: 4px solid $blue;
-    border-bottom: 4px solid $blue;
+    border-right: 1px solid $blue;
+    border-top: 1px solid $blue;
+    border-bottom: 1px solid $blue;
     box-shadow: 1px white;
 
-    img{
-        height: 60px;
-        width: auto;
-        border-radius: 10px;
-        cursor: pointer;
-        &:hover{
-            height: 65px;
+    .img-box{
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 50px;
+            width: auto;
+            border-radius: 10px;
+            cursor: pointer;
+            &:hover{
+                height: 55px;
+            }
         }
+
     }
 }

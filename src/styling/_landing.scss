@@ -1,9 +1,21 @@
 .landing{
+    // background-color: red;
     position: relative;
-    // background-color: gray;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+
+    .profile-pic{
+        height: 580px;
+        position: absolute;
+        right: 165px;
+        top: 100px;
+        border-radius: 10px;;
+    }
     .main-box{
+        // background-color: red;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -18,6 +30,28 @@
             .red{
                 color: $red;
             }
+        }
+    }
+
+    .pull-down{
+        // background-color: gray;
+        position: relative;
+        top: 80px;
+        width: 100%;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            letter-spacing: 3px;
+            word-spacing: -5px;
+            font-size: 18px;
+            font-weight: 400;
+            color: white;
+        }
+        img{
+            height: 30px;
         }
     }
     

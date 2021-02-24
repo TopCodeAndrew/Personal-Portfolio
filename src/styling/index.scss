@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;500&display=swap');
 
 
 * {
@@ -14,11 +16,11 @@
 
 body {
   margin: 0;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Source Code Pro', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   h1{
-    font-size: 150px;
+    font-size: 170px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
   }
