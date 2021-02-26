@@ -15,7 +15,7 @@
     .item-box{
         // background-color: gray;
         width: 650px;
-        margin-right:30px;
+        // margin-right:30px;
         display: flex;
         justify-content: space-between;
         .header-item{
@@ -35,7 +35,7 @@
     @media(max-width: 850px){
         .item-box{
             width: 400px;
-            margin-right: -40px;
+            margin-right: 20px;
             .header-item{
                 font-size: 15px;
             }

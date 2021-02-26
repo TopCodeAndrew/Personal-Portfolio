@@ -7,11 +7,13 @@
     align-items: center;
     height: 95vh;
     max-height: 900px;
+    padding: 0px 100px;
 
 
     .master-container{
         // background-color: red;
         width: 100%;
+        max-width: 1300px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -34,31 +36,58 @@
         }
         .profile-pic{
             height: 500px;
-            border-radius: 10px;;
+            border-radius: 10px;
+            border: 1px solid $blue;
         }
 
-        @media (max-width: 1500px){
-            .profile-pic{
-                // margin-right: 8vw;
-            }
-        }
+    
         @media (max-width: 1200px){
+            max-width: 800px;
             .profile-pic{
                 height: 350px;
             }
         }
         @media (max-width: 1000px){
-            align-items: flex-start;
             .profile-pic{
-                height: 270px;
+                height: 300px;
             }
         }
         @media (max-width: 850px){
-            flex-direction: column;
-            align-items: center;
-            height: 650px;
             .profile-pic{
-                height: 270px;
+                height: 260px;
+            }
+        }
+        @media (max-width: 680px){
+            .profile-pic{
+                height: 230px;
+                max-height: 33vh;
+            }
+        }
+        @media (max-width: 600px){
+            .profile-pic{
+                height: 210px;
+            }
+        }
+        @media (max-width: 550px){
+            flex-direction: column;
+            align-items: space-around;
+            height: 70vh ;
+            max-height: 460px;
+
+            .profile-pic{
+                height: 240px;
+            }
+        }
+        @media (max-width: 430px){
+            .main-box{
+                width: 100%;
+                .big-letter-box{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: row;
+                    margin-left: 0px;
+                }
             }
         }
     }
@@ -84,6 +113,40 @@
         img{
             height: 30px;
         }
+        @media (max-width: 400px) {
+            top: 30px;
+            p{
+                font-size: 17px;
+            }
+        }
+    }
+
+    @media(max-width: 1400px){
+        max-height: 800px;
+    }
+    @media(max-width: 1000px){
+        max-height: 600px;
+    }
+    @media (max-width: 850px){
+        padding: 0px 85px;
+    }
+    @media (max-width: 730px){
+        padding: 0px 65px;
+    }
+    @media (max-width: 680px){
+        padding: 0px 65px;
+        padding-right: 55px;
+    }
+    @media (max-width: 550px){
+        justify-content: flex-start;
+        height: 85vh;
+        max-height: 500px;
+        padding: 10px 10px;
+    }
+    @media (max-width: 400px){
+        height: 100vh;
+        max-height: none;
+        min-height: 75vh;
     }
     
 }
