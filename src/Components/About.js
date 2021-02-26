@@ -8,19 +8,29 @@ export default function About() {
     let fakeEndP = '< /p >'
     return (
         <div className="about">
-            {/* <div className='separating-line'></div>
+            <span className='line-box'>
+                <div className='separating-line'></div>
+            </span>
             <div className='main-box'>
                 <p className='fakeCode'> {fakeH2}</p>
-                <h2>des</h2>
+                <h2>about</h2>
                 <p className='fakeCode'> {fakeEndH2}</p>
             </div>
             <div className='content-box'>
                 <p className='fakeCode'> {fakeP}</p>
-                <p>
-                    lorem Sit mollit reprehenderit cupidatat consequat adipisicing tempor est. Irure cillum incididunt labore incididunt dolore. Id excepteur excepteur qui consequat aliquip fugiat. Eiusmod ipsum id ut laboris quis sunt qui laborum.Non cillum pariatur culpa adipisicing. Commodo consectetur reprehenderit veniam adipisicing deserunt ut amet pariatur veniam laborum laboris voluptate. Culpa qui mollit ut sint magna aute et.
+                <p className='paragraph'>
+                    Hi there! <br></br>
+                    <br></br>
+                    My name is Andrew Smith, and I'm a Utah-based full-stack web developer that loves to see projects come to life!<br></br>
+                    <br></br>
+                     When I am not coding, you can find me leading worship with my guitar, playing volleyball, and attempting to be the best husband and dad that I can be.<br></br>
+                    <br></br>
+                    I have a diverse set of skills, ranging from React on the front end all the way back to PostgreSQL for database architecture, and I am constantly pushing myself to learn more!<br></br>
+                    <br></br>
+                    Feel free to reach out, even if just to say "hi"! I would love to connect with you!
                 </p>
                 <p className='fakeCode'> {fakeEndP}</p>
-            </div> */}
+            </div>
         </div>
 
     );
