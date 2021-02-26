@@ -9,9 +9,9 @@ export default function ContactBar() {
         <div className="contactBar">
             <div className='button-box'>
                 <div className='img-box'><img src={linkedInIcon} /></div>
-                <div className='img-box'><img src={emailIcon} /></div>
+                <div className='img-box round'><img src={emailIcon} /></div>
                 <div className='img-box'><img src={githubIcon} /></div>
-                <div className='img-box'><img src={spotifyIcon} /></div>
+                <div className='img-box round'><img src={spotifyIcon} /></div>
             </div>
         </div>
     );

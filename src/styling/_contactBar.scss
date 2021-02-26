@@ -1,11 +1,12 @@
 .contactBar{
     z-index: 1;
-    height: 100vh;
+    height: 75vh;
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    left: 0px;
     .button-box{
         z-index: 1;
         background-color: $lightGray;
@@ -40,6 +41,9 @@
             }
 
         }
+        .round{
+            border-radius: 50%;
+        }
             
     }
-}
+} 

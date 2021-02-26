@@ -1,2 +1,9 @@
 .about{
+    display: flex;
+    flex-direction: column;
+    .separating-line{
+        width: 500px;
+        height: 3px;
+        border: 2px solid $green;
+    }
 }

@@ -1,5 +1,5 @@
 import arrow from '../images/down-arrow.png';
-import profilePic from '../images/profile-pic.jpg';
+import profilePic from '../images/for-landing.png';
 
 
 export default function Landing() {

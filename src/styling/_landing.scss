@@ -1,12 +1,12 @@
 .landing{
-    background-color: $red;
+    // background-color: $red;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 95vh;
-    max-height: 700px;
+    max-height: 900px;
 
 
     .master-container{
@@ -21,7 +21,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            margin-left: 12vw;
+            // margin-left: 12vw;
             .big-letter-box{
                 display: flex;
                 flex-direction: column;
@@ -33,19 +33,32 @@
             }
         }
         .profile-pic{
-            height: 550px;
+            height: 500px;
             border-radius: 10px;;
-            margin-right: 12vw;
         }
 
         @media (max-width: 1500px){
             .profile-pic{
-                margin-right: 8vw;
+                // margin-right: 8vw;
             }
         }
         @media (max-width: 1200px){
             .profile-pic{
-                height: 390px;
+                height: 350px;
+            }
+        }
+        @media (max-width: 1000px){
+            align-items: flex-start;
+            .profile-pic{
+                height: 270px;
+            }
+        }
+        @media (max-width: 850px){
+            flex-direction: column;
+            align-items: center;
+            height: 650px;
+            .profile-pic{
+                height: 270px;
             }
         }
     }
