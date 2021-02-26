@@ -1,5 +1,7 @@
 .skillsExperience{
     padding-left: 100px;
+    margin: 80px 0px;
+
     .main-box{
         display: flex;
         flex-direction: column;
@@ -9,13 +11,15 @@
             margin-left: 30px;
         }
     }
+
     .master-content-box{
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 1500px;
         .projects-box{
-            width: 75%;
+            height: 100%;
+            width: 70%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -23,7 +27,7 @@
             position:relative;
             .single-project-box{
                 // background-color: gray;
-                width: 90%;
+                width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -33,20 +37,26 @@
                     width: 30%;
                 }
                 .description-box{
-                    width: 70%;
+                    width: 65%;
                     height: 100%;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: space-around;
-                    margin: 30px;
+                    text-align: start;
+                    P{
+                        font-size: 20px;
+                    }
+                    ol{
+                        margin-left: 5%;
+                    }
                 }
             }
 
 
             .line-box{
                 .separating-line{
-                    width: 30%;
+                    width: 80%;
                     border: 1px solid $red;
                 }
             }
@@ -55,26 +65,178 @@
 
         }
         .images-box{
-            // background-color: gray;
+            background-color: $darkGray;
+            border-radius:  20px 0px 0px 20px;
             width: 25%;
             height: 100%;
             display: flex;
             // flex-direction: column;
-            align-items: space-between;
+            align-items: space-around;
             justify-content: space-around;
             flex-wrap: wrap;
-            padding: 0px 20px;
+            padding: 0px 0px;
             .logo-box{
                 margin: 15px;
                 width: 40%;
+                min-width: 145px;
+                height: 150px;
                 p{
 
                 }
                 img{
-                    height: 100px;
+                    height: 120px;
                 }
             }
         }
 
+        @media(max-width: 1500px){
+            .images-box{
+                padding: 5px;
+                .logo-box{
+                    margin: 0px;
+                    img{
+                        height: 110px;
+                    }
+                }
+            }
+        }
+        @media(max-width: 1300px){
+            height: 1300px;
+            .projects-box{
+                width: 65%;
+                .single-project-box{
+                    margin: 30px 0px;
+                    height: 330px;
+                    .description-box{
+                        h3{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+            .images-box{
+                padding: 0px;
+                width: 30%;
+                .logo-box{
+                    min-width: 110;
+                    margin: 0px;
+                    p{
+                        font-size: 17px;
+                    }
+                    img{
+                        height: 90px;
+                    }
+                }
+            }
+        }
+        @media(max-width: 1070px){
+            height: 1800px;
+            .projects-box{
+                justify-content: space-between;
+                .single-project-box{
+                    flex-direction: column;
+                    align-items: center;
+                    height: auto;
+                    img{
+                        width: 50%;
+                    }
+                    .description-box{
+                        width: 95%;
+                        align-items: center;
+                        h3{
+                            font-size: 20px;
+                            margin: 45px 0px;
+                        }
+                        p{
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+            .images-box{
+                padding: 5px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                .logo-box{
+                    margin: 5px;
+                    width: auto;
+                    p{
+                        font-size: 17px;
+                    }
+                    img{
+                        height: 100px;
+                    }
+                }
+            }
+        }
+        @media(max-width: 780px){
+            .projects-box{
+                width: 70%;
+                .single-project-box{
+                    img{
+                        width: 70%;
+                    }
+                    .description-box{
+                        h3{
+                            margin: 20px 0px;
+                        }
+                    }
+                }
+            }
+            .images-box{
+                width: 30%;
+                padding: 0px;
+                .logo-box{
+                    margin: auto;
+                    img{
+                        height: 70px;
+                    }
+                }
+            }
+        }
+        @media(max-width: 550px){
+            flex-direction: column;
+            height: 3000px;
+            .projects-box{
+                width: 90%;
+                .single-project-box{
+                    img{
+                        
+                    }
+                    .description-box{
+                        h3{
+                            
+                        }
+                    }
+                }
+            }
+            .images-box{
+                width: 100%;
+                padding: 20px 0px;
+                flex-direction: row;
+                height: auto;
+                border-radius: 0px;
+
+                .logo-box{
+                    min-width: none;
+                    width: 40px;
+                    margin: auto;
+                    img{
+                        height: 70px;
+                    }
+                }
+            }
+        }
+
+    }
+    @media(max-width:1000px){
+        padding-left: 75px;
+    }
+    @media(max-width:550px){
+        padding-left: 0vw;
     }
 }
