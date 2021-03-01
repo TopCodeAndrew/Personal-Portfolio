@@ -28,7 +28,6 @@ function App() {
       <Header />
       <ContactBar />
       <Landing />
-      <button onClick={() => console.log(scrollPosition)}> Scroll Position</button>
       <About />
       <SkillsExperience />
       <Footer />
