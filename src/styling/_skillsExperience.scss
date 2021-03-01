@@ -10,6 +10,18 @@
         h2{
             margin-left: 30px;
         }
+        @media(max-width: 550px){
+    
+            h2{
+                width: 100%;
+                text-justify: center;
+                margin-left: 0px;
+            }
+            .fakeCode{
+                margin-left: 5vw;
+            }
+
+        }
     }
 
     .master-content-box{
@@ -91,7 +103,7 @@
 
         @media(max-width: 1500px){
             .images-box{
-                padding: 5px;
+                padding: 10px;
                 .logo-box{
                     margin: 0px;
                     img{
@@ -100,7 +112,7 @@
                 }
             }
         }
-        @media(max-width: 1300px){
+        @media(max-width: 1340px){
             height: 1300px;
             .projects-box{
                 width: 65%;
@@ -118,7 +130,7 @@
                 }
             }
             .images-box{
-                padding: 0px;
+                padding: 15px 0px;
                 width: 30%;
                 .logo-box{
                     min-width: 110;
@@ -200,7 +212,7 @@
         }
         @media(max-width: 550px){
             flex-direction: column;
-            height: 3000px;
+            height: 2500px;
             .projects-box{
                 width: 90%;
                 .single-project-box{
@@ -223,8 +235,9 @@
 
                 .logo-box{
                     min-width: none;
+                    height: auto;
                     width: 40px;
-                    margin: auto;
+                    margin: 5px;
                     img{
                         height: 70px;
                     }
