@@ -20,14 +20,14 @@ export default function Header() {
                         <p className='header-item'>Home</p>
                     </div>
                     <div className='link-box'>
-                        <p className='header-item'>About</p>
+                        <p className='header-item about'>About</p>
                     </div>
                     <div className='link-box'>
-                        <p className='header-item'>Skills</p>
+                        <p className='header-item'>Skills/Projects</p>
                     </div>
-                    <div className='link-box'>
+                    {/* <div className='link-box'>
                         <p className='header-item'>Contact</p>
-                    </div>
+                    </div> */}
                 </span>
             </div>
             <div className='mobile'>
