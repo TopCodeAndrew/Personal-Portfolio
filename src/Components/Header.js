@@ -16,10 +16,18 @@ export default function Header() {
         <div className="header">
             <div className='desktop'>
                 <span className='item-box'>
-                    <p className='header-item'>Home</p>
-                    <p className='header-item'>About</p>
-                    <p className='header-item'>Skills/Experience</p>
-                    <p className='header-item'>Contact</p>
+                    <div className='link-box'>
+                        <p className='header-item'>Home</p>
+                    </div>
+                    <div className='link-box'>
+                        <p className='header-item'>About</p>
+                    </div>
+                    <div className='link-box'>
+                        <p className='header-item'>Skills</p>
+                    </div>
+                    <div className='link-box'>
+                        <p className='header-item'>Contact</p>
+                    </div>
                 </span>
             </div>
             <div className='mobile'>

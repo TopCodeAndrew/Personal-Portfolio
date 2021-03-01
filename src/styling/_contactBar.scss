@@ -8,7 +8,7 @@
     align-items: flex-start;
     left: 0px;
     .button-box{
-        z-index: 1;
+        z-index: 2;
         background-color: $lightGray;
         height: 350px;
         width: 65px;
@@ -25,10 +25,24 @@
         box-shadow: 1px white;
 
         .img-box{
-            height: 70px;
+            height: 55px;
             display: flex;
             justify-content: center;
             align-items: center;
+            .popout{
+                // display: none;
+                color: black;
+                font-weight: 700;
+                position: fixed;
+                left: 65px;
+                background-color: $blue;
+                height: 50px;
+                width: 100px;
+                text-align: center;
+                padding-top: 17px;
+                border-radius: 0px 5px 5px 0px; 
+                display: none;   
+            }
             img{
                 height: 50px;
                 width: auto;
@@ -39,10 +53,15 @@
                     box-shadow:  0px 0px 4px 3px $darkGray;
                 }
             }
-
-        }
-        .round{
-            border-radius: 50%;
+            .round{
+                border-radius: 50%;
+            }
+            &:hover{
+                .popout{
+                    display: inline; 
+                }
+            }
+            
         }
             
     }

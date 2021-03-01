@@ -1,7 +1,9 @@
 .header{
     background-color: #23242956;
     z-index: 1;
-    height: 70px;
+    height: 10vh;
+    min-height: 50px;
+    max-height: 70px;
     max-width: 100vw;
     display: flex;
     justify-content: flex-end;
@@ -21,8 +23,20 @@
         margin-right:7vw;
         display: flex;
         justify-content: space-between;
-        .header-item{
-            font-size: 22px;
+        .link-box{
+            width: 170px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .header-item{
+                font-size: 22px;
+                &:hover{
+                    font-size: 24px;
+                    cursor: pointer;
+                    color: white;
+                }
+            }
         }
     }
 

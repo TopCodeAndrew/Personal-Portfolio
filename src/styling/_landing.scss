@@ -1,51 +1,49 @@
 .landing{
-    // background-color: $red;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 95vh;
-    max-height: 900px;
+    height: 92vh;
     padding: 0px 100px;
+    // background-color: gray;
 
 
     .master-container{
-        // background-color: red;
         width: 100%;
         max-width: 1300px;
+        height: 75%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         .main-box{
-            // background-color: red;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            // margin-left: 12vw;
             .big-letter-box{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                margin-left: 30px;
+                margin-left: 2vw;
                 .red{
                     color: $red;
                 }
             }
         }
         .profile-pic{
-            height: 500px;
+            height: 80%;
             border-radius: 10px;
             border: 1px solid $blue;
         }
 
     
         @media (max-width: 1200px){
-            max-width: 800px;
+            max-width: 900px;
             .profile-pic{
-                height: 350px;
+                height: 400px;
             }
+            
         }
         @media (max-width: 1000px){
             .profile-pic{
@@ -53,50 +51,32 @@
             }
         }
         @media (max-width: 850px){
-            .profile-pic{
-                height: 260px;
-            }
-        }
-        @media (max-width: 680px){
-            .profile-pic{
-                height: 230px;
-                max-height: 33vh;
-            }
-        }
-        @media (max-width: 600px){
-            .profile-pic{
-                height: 210px;
-            }
-        }
-        @media (max-width: 550px){
             flex-direction: column;
-            align-items: space-around;
-            height: 70vh ;
-            max-height: 460px;
-
-            .profile-pic{
-                height: 240px;
-            }
-        }
-        @media (max-width: 430px){
+            justify-content: space-around;
             .main-box{
-                width: 100%;
                 .big-letter-box{
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-around;
                     flex-direction: row;
-                    margin-left: 0px;
+                    h1{
+                        margin-right: 10px;
+                    }
                 }
             }
+            .profile-pic{
+                height: 55%;
+            }
         }
+        @media (max-width: 400px){
+
+            .profile-pic{
+                height: 45%;
+            }
+        }
+
+        
+        
     }
 
-
     .pull-down{
-        // background-color: gray;
-        position: relative;
-        top: 80px;
         width: 100%;
         height: 90px;
         display: flex;
@@ -111,22 +91,17 @@
             color: white;
         }
         img{
-            height: 30px;
+            height: 3vh;
         }
         @media (max-width: 400px) {
-            top: 30px;
+            height: 15vh;
             p{
                 font-size: 17px;
             }
         }
     }
 
-    @media(max-width: 1400px){
-        max-height: 800px;
-    }
-    @media(max-width: 1000px){
-        max-height: 600px;
-    }
+
     @media (max-width: 850px){
         padding: 0px 85px;
     }
@@ -138,15 +113,12 @@
         padding-right: 55px;
     }
     @media (max-width: 550px){
-        justify-content: flex-start;
-        height: 85vh;
-        max-height: 500px;
         padding: 10px 10px;
-    }
-    @media (max-width: 400px){
         height: 100vh;
-        max-height: none;
-        min-height: 75vh;
+        position: relative;
+        bottom: 10vh
     }
+    
+    
     
 }
