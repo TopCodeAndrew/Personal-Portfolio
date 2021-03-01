@@ -1,8 +1,17 @@
-import hamburger from '../images/hamburger.png'
+import React, { useState } from 'react';
+import hamburger from '../images/hamburger.png';
 
 
 
 export default function Header() {
+
+    const [menuToggle, setMenuToggle] = useState(false)
+
+    function toggleOpen() {
+        setMenuToggle(!menuToggle);
+        console.log(menuToggle)
+    }
+
     return (
         <div className="header">
             <div className='desktop'>
@@ -14,12 +23,20 @@ export default function Header() {
                 </span>
             </div>
             <div className='mobile'>
-                <img className='hamburger' src={hamburger} />
-                <div className='drop-down'>
+                <img
+                    className='hamburger'
+                    src={hamburger}
+                    onClick={toggleOpen}
+                    alt='hamburger-icon' />
+
+                <div className='drop-down-container'>{menuToggle ? <div className='drop-down'>
                     <p>Home</p>
                     <p>About</p>
                     <p>Skills/Experience</p>
                     <p>Contact</p>
+                </div>
+                    :
+                    null}
                 </div>
             </div>
         </div>

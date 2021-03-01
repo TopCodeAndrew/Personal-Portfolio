@@ -68,25 +68,28 @@
             .header-item{
                 width: auto;
             }
-            .drop-down{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: flex-end;
-                height: 50vh;
+            .drop-down-container{
                 width: 100%;
-                background-color: #00000056;
-                backdrop-filter: blur(6px);
-                padding-top: 90px;
-                padding-bottom: 10px;
-                padding-right: 15px;
-                position: relative;
-                top: -90px;
-                border-bottom: 1px solid $red;
-                p{
-                    font-size: 22px;
+                .drop-down{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: flex-end;
+                    height: 50vh;
+                    width: 100%;
+                    background-color: #00000091;
+                    backdrop-filter: blur(9px);
+                    padding-top: 90px;
+                    padding-bottom: 10px;
+                    padding-right: 15px;
+                    position: relative;
+                    top: -90px;
+                    border-bottom: 1px solid $red;
+                    p{
+                        font-size: 4vh;
+                    }
+                    // display: none;
                 }
-                // display: none;
             }
         }
         
