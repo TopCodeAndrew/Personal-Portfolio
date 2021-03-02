@@ -21,7 +21,7 @@ export default function SkillsExperience() {
     let fakeP = '< p >'
     let fakeEndP = '< /p >'
     return (
-        <div className="skillsExperience">
+        <div className="skillsExperience" id='skillsExperience'>
             {/* <span className='line-box'>
                 <div className='separating-line'></div>
             </span> */}

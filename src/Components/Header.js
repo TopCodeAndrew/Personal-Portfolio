@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import hamburger from '../images/hamburger.png';
+import { Link } from 'react-scroll';
 
 
 
@@ -16,18 +17,36 @@ export default function Header() {
         <div className="header">
             <div className='desktop'>
                 <span className='item-box'>
-                    <div className='link-box'>
+                    <Link
+                        className='link-box'
+                        activeClass="active"
+                        to="landing"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}>
                         <p className='header-item'>Home</p>
-                    </div>
-                    <div className='link-box'>
-                        <p className='header-item about'>About</p>
-                    </div>
-                    <div className='link-box'>
-                        <p className='header-item'>Skills/Projects</p>
-                    </div>
-                    {/* <div className='link-box'>
-                        <p className='header-item'>Contact</p>
-                    </div> */}
+                    </Link>
+                    <Link
+                        className='link-box about'
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}>
+                        <p className='header-item'>About</p>
+                    </Link>
+                    <Link
+                        className='link-box'
+                        activeClass="active"
+                        to="skillsExperience"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}>
+                        <p className='header-item'>Experience</p>
+                    </Link>
                 </span>
             </div>
             <div className='mobile'>
@@ -38,10 +57,50 @@ export default function Header() {
                     alt='hamburger-icon' />
 
                 <div className='drop-down-container'>{menuToggle ? <div className='drop-down'>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Skills/Experience</p>
-                    <p>Contact</p>
+                    <Link
+                        className='link-box'
+                        activeClass="active"
+                        to="landing"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        onClick={(() => toggleOpen())}>
+                        <p className='header-item'>Home</p>
+                    </Link>
+                    <Link
+                        className='link-box'
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        onClick={(() => toggleOpen())}>
+                        <p className='header-item'>About</p>
+                    </Link>
+                    <Link
+                        className='link-box'
+                        activeClass="active"
+                        to="skillsExperience"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        onClick={(() => toggleOpen())}>
+                        <p className='header-item'>Experience</p>
+                    </Link>
+                    <Link
+                        className='link-box'
+                        activeClass="active"
+                        to="contactBottom"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        onClick={(() => toggleOpen())}>
+                        <p className='header-item'>Contact</p>
+                    </Link>
                 </div>
                     :
                     null}

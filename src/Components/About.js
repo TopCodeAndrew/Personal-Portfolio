@@ -7,7 +7,7 @@ export default function About() {
     let fakeP = '< p >'
     let fakeEndP = '< /p >'
     return (
-        <div className="about">
+        <div className="about" id='about'>
             {/* <span className='line-box'>
                 <div className='separating-line'></div>
             </span> */}

@@ -1,17 +1,18 @@
 .landing{
     position: relative;
+    top: 3vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 92vh;
+    height: 89vh;
     padding: 0px 100px;
     // background-color: gray;
 
 
     .master-container{
         width: 100%;
-        max-width: 1300px;
+        max-width: 1400px;
         height: 75%;
         display: flex;
         justify-content: space-between;
@@ -30,9 +31,17 @@
                     color: $red;
                 }
             }
+            .intro{
+                width: 100%;
+                font-size: 20px;
+                color: $lightGray;
+                @media(max-width: 550px){
+                    font-size: 17px;
+                }
+            }
         }
         .profile-pic{
-            height: 80%;
+            height: 75%;
             border-radius: 10px;
             border: 1px solid $blue;
         }
@@ -116,7 +125,14 @@
         padding: 10px 10px;
         height: 100vh;
         position: relative;
-        bottom: 10vh
+        top: -13vh;
+        bottom: 10vh;
+        .intro{
+            display: none
+        }
+        .h2{
+            display: none;
+        }
     }
     
     
