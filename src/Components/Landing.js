@@ -1,5 +1,5 @@
 import arrow from '../images/down-arrow.png';
-import profilePic from '../images/for-landing.png';
+import profilePic from '../images/profile-pic.jpg';
 
 
 export default function Landing() {
@@ -7,7 +7,7 @@ export default function Landing() {
     let fakeEndH1 = '< /h1 >'
     let fakeH2 = '< h2 >'
     let fakeEndH2 = '< /h2 >'
-    let intro = '(I build websites... the right way)'
+    let intro = '(I build web applications... the right way)'
     return (
         <div className="landing">
             <div className='master-container'>
@@ -23,7 +23,6 @@ export default function Landing() {
                     <p className='intro'>{intro}</p>
                     <p className='fakeCode h2'> {fakeEndH2}</p>
                 </div>
-                <img className='profile-pic' src={profilePic} alt='profile-pic' />
             </div>
             <div className='pull-down'>
                 <p>Learn more about what I do</p>

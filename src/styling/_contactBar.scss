@@ -1,15 +1,17 @@
 .contactBar{
     z-index: 1;
-    height: 75vh;
+    height: 100vh;    
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     left: 0px;
+    
     .button-box{
         z-index: 2;
-        background-color: $lightGray;
+        background-color: #2c2c2c62;
+        backdrop-filter: blur(9px);
         height: 350px;
         width: 65px;
         // position: fixed;

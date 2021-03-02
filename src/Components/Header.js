@@ -28,12 +28,12 @@ export default function Header() {
                         <p className='header-item'>Home</p>
                     </Link>
                     <Link
-                        className='link-box about'
+                        className='link-box'
                         activeClass="active"
                         to="about"
                         spy={true}
                         smooth={true}
-                        offset={-70}
+                        offset={0}
                         duration={500}>
                         <p className='header-item'>About</p>
                     </Link>
@@ -63,7 +63,7 @@ export default function Header() {
                         to="landing"
                         spy={true}
                         smooth={true}
-                        offset={-70}
+                        offset={0}
                         duration={500}
                         onClick={(() => toggleOpen())}>
                         <p className='header-item'>Home</p>
@@ -74,8 +74,8 @@ export default function Header() {
                         to="about"
                         spy={true}
                         smooth={true}
-                        offset={-70}
-                        duration={500}
+                        offset={0}
+                        duration={1000}
                         onClick={(() => toggleOpen())}>
                         <p className='header-item'>About</p>
                     </Link>
@@ -85,7 +85,7 @@ export default function Header() {
                         to="skillsExperience"
                         spy={true}
                         smooth={true}
-                        offset={-70}
+                        offset={0}
                         duration={500}
                         onClick={(() => toggleOpen())}>
                         <p className='header-item'>Experience</p>
@@ -96,7 +96,7 @@ export default function Header() {
                         to="contactBottom"
                         spy={true}
                         smooth={true}
-                        offset={-70}
+                        offset={0}
                         duration={500}
                         onClick={(() => toggleOpen())}>
                         <p className='header-item'>Contact</p>
@@ -106,7 +106,7 @@ export default function Header() {
                     null}
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 

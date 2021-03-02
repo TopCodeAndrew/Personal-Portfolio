@@ -1,23 +1,27 @@
 .landing{
     position: relative;
-    top: 3vh;
+    background-color: black;
+    background-image: url(../images/profile-pic-crop3.jpg);
+    background-position: right;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 89vh;
-    padding: 0px 100px;
+    height: 100vh;
+    padding: 90px 100px 0px;
     // background-color: gray;
 
-
     .master-container{
+        z-index: 1;
         width: 100%;
         max-width: 1400px;
         height: 75%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        
         .main-box{
             display: flex;
             flex-direction: column;
@@ -40,100 +44,103 @@
                 }
             }
         }
-        .profile-pic{
-            height: 75%;
-            border-radius: 10px;
-            border: 1px solid $blue;
-        }
 
-    
         @media (max-width: 1200px){
             max-width: 900px;
-            .profile-pic{
-                height: 400px;
-            }
-            
-        }
-        @media (max-width: 1000px){
-            .profile-pic{
-                height: 300px;
+            .main-box{
+                .intro{
+                    font-size: 17px;
+                }
+
             }
         }
+
         @media (max-width: 850px){
             flex-direction: column;
             justify-content: space-around;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.712);
+            // backdrop-filter: blur(100px);
+            
             .main-box{
+                // background-color: red;
+                align-items: center;
+                justify-content: center;
                 .big-letter-box{
                     flex-direction: row;
+                    padding-top: 20px ;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 0px;
                     h1{
                         margin-right: 10px;
                     }
                 }
-            }
-            .profile-pic{
-                height: 55%;
+                
+                .h2{
+                    display: none;
+                }
+                .intro{
+                    padding: 15px 0px;
+                    font-size: 22px;
+                }
             }
         }
-        @media (max-width: 400px){
-
-            .profile-pic{
-                height: 45%;
+        @media (max-width: 350px){
+            .main-box{
+                .intro{
+                    font-size: 17px;
+                }
             }
         }
-
-        
-        
     }
 
     .pull-down{
+        z-index: 1;
         width: 100%;
-        height: 90px;
+        height: 15vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         p{
             letter-spacing: 3px;
             word-spacing: -5px;
-            font-size: 18px;
-            font-weight: 400;
+            font-size: 24px;
+            font-weight: 700;
             color: white;
         }
         img{
             height: 3vh;
         }
+        @media (max-width: 850px) {
+            width: 100%;
+            height: 7vh;
+            background-color: rgba(0, 0, 0, 0.712);
+            p{
+                display: none;
+            }
+        }
         @media (max-width: 400px) {
             height: 15vh;
-            p{
-                font-size: 17px;
-            }
+            max-height: 60px;
         }
     }
 
 
     @media (max-width: 850px){
-        padding: 0px 85px;
-    }
-    @media (max-width: 730px){
-        padding: 0px 65px;
-    }
-    @media (max-width: 680px){
-        padding: 0px 65px;
-        padding-right: 55px;
-    }
-    @media (max-width: 550px){
-        padding: 10px 10px;
-        height: 100vh;
-        position: relative;
-        top: -13vh;
-        bottom: 10vh;
-        .intro{
-            display: none
-        }
-        .h2{
+        padding: 0px ;
+        justify-content: flex-end;
+        background-position: center;
+        backdrop-filter: blur(10px);
+        .fakeCode{
             display: none;
         }
+
     }
+    
     
     
     

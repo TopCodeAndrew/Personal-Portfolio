@@ -27,7 +27,7 @@ export default function About() {
                     <br></br>
                     I have a diverse set of skills, ranging from React on the front end to PostgreSQL for database architecture, and I am constantly pushing myself to learn more!<br></br>
                     <br></br>
-                    Feel free to reach out, even if just to say "hi"! I would love to connect with you!
+                    Feel free to reach out, even if just to say "hi"... I would love to connect with you!
                 </p>
                 <p className='fakeCode'> {fakeEndP}</p>
             </div>
