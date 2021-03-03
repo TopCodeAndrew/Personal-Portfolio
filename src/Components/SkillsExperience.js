@@ -13,11 +13,17 @@ import postman from '../images/tech-icons/postman.png';
 import postgresql from '../images/tech-icons/postgresql.png';
 import react from '../images/tech-icons/react.png';
 import redux from '../images/tech-icons/redux.png';
+import eye from '../images/eye-icon.png';
 
 
 export default function SkillsExperience() {
     let fakeH2 = '< h2 >'
     let fakeEndH2 = '< /h2 >'
+
+    const openNewTab = (url) => {
+        const win = window.open(`${url}`, "_blank");
+        win.focus();
+    }
 
     return (
         <div className="skillsExperience" id='skillsExperience'>
@@ -33,13 +39,16 @@ export default function SkillsExperience() {
 
             <span className='master-content-box'>
                 <span className='projects-box'>
-                    {/* <span className='line-box'>
-                        <div className='separating-line'></div>
-                    </span> */}
                     <span className='single-project-box'>
                         <img alt='laptop-img' src={modofloLaptop} />
                         <span className='description-box'>
-                            <h3>modoflo.com</h3>
+                            <div className='title'>
+                                <h3>modoflo.com</h3>
+                                <div className='icons'>
+                                    <img src={eye} alt='eye-icon' onClick={() => openNewTab('https://modoflo.com/#/')} />
+                                    <img className='git' src={github} alt='github-icon' onClick={() => openNewTab('https://github.com/TopCodeAndrew/MoDoFlo')} />
+                                </div>
+                            </div>
                             <p> Originally designed to assist Andrew to easily use the popular Pomodoro productivity technique, modoflo is now available to anyone on the web. <br></br> <br></br>
                             Features:<br></br>
                                 <ol>
@@ -57,7 +66,10 @@ export default function SkillsExperience() {
                     <span className='single-project-box'>
                         <img alt='laptop-img' src={changeLaptop} />
                         <span className='description-box'>
-                            <h3>Change-Squared</h3>
+                            <div className='title'>
+                                <h3>Change-Squared</h3>
+                                <img className='git' src={github} alt='github-icon' onClick={() => openNewTab('https://github.com/TopCodeAndrew/noDBproject')} />
+                            </div>
                             <p> Change-Squared is a simple, easy-to-use styling editor. A personal challenge in this project was to create it without using any redux to store variables, resulting in more complicated prop-drilling.<br></br> <br></br>
                             Features:<br></br>
                                 <ol>
@@ -74,7 +86,13 @@ export default function SkillsExperience() {
                     <span className='single-project-box'>
                         <img alt='laptop-img' src={lemonLaptop} />
                         <span className='description-box'>
-                            <h3>LemonProp.com</h3>
+                            <div className='title'>
+                                <h3>LemonProp.com</h3>
+                                <div className='icons'>
+                                    <img src={eye} alt='eye-icon' onClick={() => openNewTab('https://lemonprop.com/#/')} />
+                                    <img className='git' src={github} alt='github-icon' onClick={() => openNewTab('https://github.com/Lemon-Prop-Management/lemon-prop')} />
+                                </div>
+                            </div>
                             <p> LemonProp.com is the property management software created for a hypothetical company, "LemonProp Management". As the lead developer for this project, Andrew participated first-hand in guiding his team through agile software development practices. <br></br> <br></br>
                             Features:<br></br>
                                 <ol>
