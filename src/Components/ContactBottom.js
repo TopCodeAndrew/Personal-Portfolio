@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import githubIcon from '../images/github-icon.png';
 import linkedInIcon from '../images/linkedIn-icon.png';
 import calendarIcon from '../images/calendar-icon.png';
@@ -11,7 +11,7 @@ export default function ContactBottom() {
 
 
     const openNewTab = (url = '192.168.1.109:3000') => {
-        const win = window.open(`${url}`);
+        window.open(`${url}`);
         // win.focus();
     }
 
