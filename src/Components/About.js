@@ -21,7 +21,7 @@ export default function About() {
                 <p className='paragraph'>
                     Hi there! <br></br>
                     <br></br>
-                    My name is Andrew Smith - I'm a Utah-based full stack web developer that loves to see projects come to life!<br></br>
+                    My name is Andrew Smith - I'm a Utah-based full stack web developer that is passionate about quality applications that add value to people's lives.<br></br>
                     <br></br>
                      When I am not coding, you can find me researching productivity hacks, leading worship with my guitar, testing new beard products, playing volleyball, and attempting to be the best husband and dad that I can be.<br></br>
                     <br></br>
