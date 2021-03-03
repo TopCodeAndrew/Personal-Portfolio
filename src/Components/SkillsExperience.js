@@ -18,8 +18,7 @@ import redux from '../images/tech-icons/redux.png';
 export default function SkillsExperience() {
     let fakeH2 = '< h2 >'
     let fakeEndH2 = '< /h2 >'
-    let fakeP = '< p >'
-    let fakeEndP = '< /p >'
+
     return (
         <div className="skillsExperience" id='skillsExperience'>
             {/* <span className='line-box'>
@@ -38,7 +37,7 @@ export default function SkillsExperience() {
                         <div className='separating-line'></div>
                     </span> */}
                     <span className='single-project-box'>
-                        <img src={modofloLaptop} />
+                        <img alt='laptop-img' src={modofloLaptop} />
                         <span className='description-box'>
                             <h3>modoflo.com</h3>
                             <p> Originally designed to assist Andrew to easily use the popular Pomodoro productivity technique, modoflo is now available to anyone on the web. <br></br> <br></br>
@@ -56,7 +55,7 @@ export default function SkillsExperience() {
                         <div className='separating-line'></div>
                     </span>
                     <span className='single-project-box'>
-                        <img src={changeLaptop} />
+                        <img alt='laptop-img' src={changeLaptop} />
                         <span className='description-box'>
                             <h3>Change-Squared</h3>
                             <p> Change-Squared is a simple, easy-to-use styling editor. A personal challenge in this project was to create it without using any redux to store variables, resulting in more complicated prop-drilling.<br></br> <br></br>
@@ -73,7 +72,7 @@ export default function SkillsExperience() {
                         <div className='separating-line'></div>
                     </span>
                     <span className='single-project-box'>
-                        <img src={lemonLaptop} />
+                        <img alt='laptop-img' src={lemonLaptop} />
                         <span className='description-box'>
                             <h3>LemonProp.com</h3>
                             <p> LemonProp.com is the property management software created for a hypothetical company, "LemonProp Management". As the lead developer for this project, Andrew participated first-hand in guiding his team through agile software development practices. <br></br> <br></br>
@@ -91,47 +90,47 @@ export default function SkillsExperience() {
                 <span className='images-box'>
                     <div className='logo-box'>
                         <p>JavaScript</p>
-                        <img src={javascript} />
+                        <img alt='tech-logo-img' src={javascript} />
                     </div>
                     <div className='logo-box'>
                         <p>HTML5</p>
-                        <img src={html} />
+                        <img alt='tech-logo-img' src={html} />
                     </div>
                     <div className='logo-box'>
                         <p>CSS3</p>
-                        <img src={css} />
+                        <img alt='tech-logo-img' src={css} />
                     </div>
                     <div className='logo-box'>
                         <p>GitHub</p>
-                        <img src={github} />
+                        <img alt='tech-logo-img' src={github} />
                     </div>
                     <div className='logo-box'>
                         <p>React.js</p>
-                        <img src={react} />
+                        <img alt='tech-logo-img' src={react} />
                     </div>
                     <div className='logo-box'>
                         <p>Redux</p>
-                        <img src={redux} />
+                        <img alt='tech-logo-img' src={redux} />
                     </div>
                     <div className='logo-box'>
                         <p>Node.js</p>
-                        <img src={node} />
+                        <img alt='tech-logo-img' src={node} />
                     </div>
                     <div className='logo-box'>
                         <p>PostgreSQL</p>
-                        <img src={postgresql} />
+                        <img alt='tech-logo-img' src={postgresql} />
                     </div>
                     <div className='logo-box'>
                         <p>Heroku</p>
-                        <img src={heroku} />
+                        <img alt='tech-logo-img' src={heroku} />
                     </div>
                     <div className='logo-box'>
                         <p>Adobe</p>
-                        <img src={adobe} />
+                        <img alt='tech-logo-img' src={adobe} />
                     </div>
                     <div className='logo-box'>
                         <p>Postman</p>
-                        <img src={postman} />
+                        <img alt='tech-logo-img' src={postman} />
                     </div>
                 </span>
             </span>

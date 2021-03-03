@@ -3,19 +3,6 @@ import arrow from '../images/down-arrow.png';
 import { gsap } from "gsap";
 
 
-const Animation = () => {
-
-    return (
-        <div style={{
-            width: '160px',
-            height: '160px',
-            background: 'salmon'
-        }} />
-    )
-}
-
-
-
 export default function Landing() {
     let fakeH1 = '< h1 >'
     let fakeEndH1 = '< /h1 >'

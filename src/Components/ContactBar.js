@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import githubIcon from '../images/github-icon.png';
 import linkedInIcon from '../images/linkedIn-icon.png';
 import calendarIcon from '../images/calendar-icon.png';
@@ -16,26 +16,25 @@ export default function ContactBar() {
 
     const newEmail = () => {
         window.open(`mailto:andrewjsuccess@gmail.com?subject=${subject}`)
-        // &body=Body%20goes%20here')
     }
 
     return (
         <div className="contactBar">
             <div className='button-box'>
                 <div className='img-box' onClick={() => openNewTab('https://www.linkedin.com/in/andrewsmithutah/')}>
-                    <img src={linkedInIcon} />
+                    <img src={linkedInIcon} alt='sidebar-img' />
                     <div className='popout' onClick={() => openNewTab('https://www.linkedin.com/in/andrewsmithutah/')}>LinkedIn</div>
                 </div>
                 <div className='img-box' onClick={() => newEmail()}>
-                    <img className='round' src={emailIcon} />
+                    <img className='round' src={emailIcon} alt='sidebar-img' />
                     <div className='popout' onClick={() => newEmail()}> Email </div>
                 </div>
                 <div className='img-box' onClick={() => openNewTab('https://github.com/TopCodeAndrew')}>
-                    <img src={githubIcon} />
+                    <img src={githubIcon} alt='sidebar-img' />
                     <div className='popout' onClick={() => openNewTab('https://github.com/TopCodeAndrew')}> Github</div>
                 </div>
                 <div className='img-box' onClick={() => openNewTab('https://calendly.com/andrewjsuccess/30min')}>
-                    <img className='round' src={calendarIcon} />
+                    <img className='round' src={calendarIcon} alt='sidebar-img' />
                     <div className='popout' onClick={() => openNewTab('https://calendly.com/andrewjsuccess/30min')}> Book Call </div>
                 </div>
             </div>

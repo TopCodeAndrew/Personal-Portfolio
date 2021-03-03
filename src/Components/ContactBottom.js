@@ -7,8 +7,6 @@ import emailIcon from '../images/email-icon.png';
 export default function ContactBottom() {
     let fakeH2 = '< h2 >'
     let fakeEndH2 = '< /h2 >'
-    let fakeP = '< p >'
-    let fakeEndP = '< /p >'
 
     const openNewTab = (url) => {
         const win = window.open(`${url}`, "_blank");
@@ -36,22 +34,22 @@ export default function ContactBottom() {
                 <div className='column-box'>
                     <div className='img-box' onClick={() => openNewTab('https://www.linkedin.com/in/andrewsmithutah/')}>
                         <div className='popout'> LinkedIn</div>
-                        <img src={linkedInIcon} />
+                        <img src={linkedInIcon} alt='contact-bottom-img' />
                     </div>
                     <div className='img-box' onClick={() => newEmail()}>
                         <div className='popout'> Email </div>
-                        <img className='round' src={emailIcon} />
+                        <img className='round' src={emailIcon} alt='contact-bottom-img' />
                     </div>
                 </div>
 
                 <div className='column-box'>
                     <div className='img-box' onClick={() => openNewTab('https://github.com/TopCodeAndrew')}>
                         <div className='popout'> Github</div>
-                        <img src={githubIcon} />
+                        <img src={githubIcon} alt='contact-bottom-img' />
                     </div>
                     <div className='img-box' onClick={() => openNewTab('https://calendly.com/andrewjsuccess/30min')}>
                         <div className='popout'> Book Call </div>
-                        <img className='round' src={calendarIcon} />
+                        <img className='round' src={calendarIcon} alt='contact-bottom-img' />
                     </div>
                 </div>
             </div>

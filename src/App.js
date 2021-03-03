@@ -6,8 +6,7 @@ import Landing from './Components/Landing';
 import SkillsExperience from './Components/SkillsExperience';
 import ContactBottom from './Components/ContactBottom';
 import Footer from './Components/Footer';
-import React, { useState, useEffect } from 'react';
-import { gsap } from "gsap";
+import React from 'react';
 
 
 
