@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import githubIcon from '../images/github-icon.png';
 import linkedInIcon from '../images/linkedIn-icon.png';
 import calendarIcon from '../images/calendar-icon.png';
@@ -23,19 +24,19 @@ export default function ContactBar() {
             <div className='button-box'>
                 <div className='img-box' onClick={() => openNewTab('https://www.linkedin.com/in/andrewsmithutah/')}>
                     <img src={linkedInIcon} />
-                    <div className='popout'> LinkedIn</div>
+                    <div className='popout' onClick={() => openNewTab('https://www.linkedin.com/in/andrewsmithutah/')}>LinkedIn</div>
                 </div>
                 <div className='img-box' onClick={() => newEmail()}>
                     <img className='round' src={emailIcon} />
-                    <div className='popout'> Email </div>
+                    <div className='popout' onClick={() => newEmail()}> Email </div>
                 </div>
                 <div className='img-box' onClick={() => openNewTab('https://github.com/TopCodeAndrew')}>
                     <img src={githubIcon} />
-                    <div className='popout'> Github</div>
+                    <div className='popout' onClick={() => openNewTab('https://github.com/TopCodeAndrew')}> Github</div>
                 </div>
                 <div className='img-box' onClick={() => openNewTab('https://calendly.com/andrewjsuccess/30min')}>
                     <img className='round' src={calendarIcon} />
-                    <div className='popout'> Book Call </div>
+                    <div className='popout' onClick={() => openNewTab('https://calendly.com/andrewjsuccess/30min')}> Book Call </div>
                 </div>
             </div>
         </div>

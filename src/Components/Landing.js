@@ -1,5 +1,19 @@
+import React, { useEffect, useRef } from "react";
 import arrow from '../images/down-arrow.png';
-import profilePic from '../images/profile-pic.jpg';
+import { gsap } from "gsap";
+
+
+const Animation = () => {
+
+    return (
+        <div style={{
+            width: '160px',
+            height: '160px',
+            background: 'salmon'
+        }} />
+    )
+}
+
 
 
 export default function Landing() {
@@ -7,7 +21,22 @@ export default function Landing() {
     let fakeEndH1 = '< /h1 >'
     let fakeH2 = '< h2 >'
     let fakeEndH2 = '< /h2 >'
-    let intro = '(I build web applications... the right way)'
+    let intro = '(I build web applications... the right way)';
+
+    const imgRef = useRef()
+
+    useEffect(() => {
+        gsap.from([imgRef.current], {
+            opacity: 0,
+            y: '-3vh',
+            height: "1vh",
+            duration: .7,
+            repeat: -1,
+            yoyo: true,
+            ease: "back",
+        })
+    })
+
     return (
         <div className="landing">
             <div className='master-container'>
@@ -27,7 +56,9 @@ export default function Landing() {
             <div className='pull-down'>
                 <p>Learn more about what I do</p>
                 <img
+                    ref={imgRef}
                     className='down-arrow'
+                    id='down-arrow'
                     src={arrow}
                     alt='down-arrow' />
             </div>
