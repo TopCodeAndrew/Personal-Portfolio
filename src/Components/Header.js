@@ -75,7 +75,7 @@ export default function Header() {
                         spy={true}
                         smooth={true}
                         offset={0}
-                        duration={1000}
+                        duration={500}
                         onClick={(() => toggleOpen())}>
                         <p className='header-item'>About</p>
                     </Link>

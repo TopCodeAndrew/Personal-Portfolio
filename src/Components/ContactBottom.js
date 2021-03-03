@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import githubIcon from '../images/github-icon.png';
 import linkedInIcon from '../images/linkedIn-icon.png';
 import calendarIcon from '../images/calendar-icon.png';
@@ -8,9 +9,10 @@ export default function ContactBottom() {
     let fakeH2 = '< h2 >'
     let fakeEndH2 = '< /h2 >'
 
-    const openNewTab = (url) => {
-        const win = window.open(`${url}`, "_blank");
-        win.focus();
+
+    const openNewTab = (url = '192.168.1.109:3000') => {
+        const win = window.open(`${url}`);
+        // win.focus();
     }
 
     const subject = "Hey Andrew... let's connect!"
